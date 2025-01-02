@@ -87,11 +87,11 @@ const Works = () => {
             src={src}
             alt={`Low-Fidelity Prototype ${index + 1}`}
             className="w-80 h-auto object-cover rounded-2xl"
-            onError={(e) => { e.target.onerror = null; e.target.src = 'fallback-image-path.jpg'; }} // Add a fallback image path
+            onError={(e) => { e.target.onerror = null; e.target.src = github; }} // Add a fallback image path
           />
         ))}
       </div>
-
+          
       <motion.div variants={textVariant()} className="mt-10">
         <p className={ `${styles.sectionSubText} `}>Prototype</p>
         <h2 className={`${styles.sectionHeadText}`}>Medium-Fidelity</h2>
